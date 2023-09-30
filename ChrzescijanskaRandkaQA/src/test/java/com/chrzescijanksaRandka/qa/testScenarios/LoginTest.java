@@ -39,16 +39,16 @@ public class LoginTest extends Base {
 	}
 		@AfterMethod
 		 public void tearDown() {
-			driver.quit();
+			//driver.quit();
 		
 	}
 		@Test(priority=1)
 		public void verifyLoggingIntoTheApplicationUsingValidCredentials() {
-			AccountPage accountPage = new AccountPage(driver);
+			//AccountPage accountPage = new AccountPage(driver);
 		loginPage.clickOnFirstLoginButton();
 			loginPage.login(dataProp.getProperty("validEmail"),dataProp.getProperty("validPassword"));
-			
-			//Assert.assertTrue(accountPage.getDisplayStatusOfprofileButton(),"profileButton is not displated");
+			AccountPage accountPage = new AccountPage(driver);
+			Assert.assertTrue(accountPage.getDisplayStatusOfprofileButton(),"profileButton is not displated");
 		}
 	
 

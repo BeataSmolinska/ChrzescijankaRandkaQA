@@ -27,9 +27,12 @@ public class LoginPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickOnFirstLoginButton() {
+	public AccountPage clickOnFirstLoginButton() {
 		firstLoginButton.click();
+		return new AccountPage(driver);
+		
 	}
+
 
 	public void enterUsername(String emailText) {
 		userField.sendKeys(emailText);

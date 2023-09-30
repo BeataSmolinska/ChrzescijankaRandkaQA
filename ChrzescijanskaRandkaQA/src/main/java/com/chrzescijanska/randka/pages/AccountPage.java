@@ -13,21 +13,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AccountPage {
 	WebDriver driver;
-	
 
-//@FindBy(className=("tiny button radius btn-logout"))
-//private WebElement profileButton;
-	
-	public AccountPage (WebDriver driver) {
+	@FindBy(css = ".icon-user.hide-for-medium-down")
+	WebElement profileButton;
+
+	public AccountPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
 
-//public boolean getDisplayStatusOfprofileButton() {
-	//boolean displayStatus = profileButton.isDisplayed();
-	//return displayStatus;
+	public boolean getDisplayStatusOfprofileButton() {
+		boolean displayStatus = profileButton.isDisplayed();
+		return displayStatus;
+	}
 }
-
-
-
