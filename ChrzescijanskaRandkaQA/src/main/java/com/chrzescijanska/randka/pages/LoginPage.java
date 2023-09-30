@@ -4,28 +4,57 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-WebDriver driver;
+	WebDriver driver;
+	
+	@FindBy(id="login_panel")
+	private WebElement firstLoginButton;
 
-	public LoginPage (WebDriver driver) {
-	this.driver = driver;
-	}
-	By logInBox = By.id("username");
-	By passwordBox = By.id("password");
-	By logIn_btn = By.id("login");
-	
-	public void enterUsername() {
-		driver.findElement(logInBox).sendKeys("Tester");
-	}
-public void enterPassword() {
-	driver.findElement(passwordBox).sendKeys("lespak13");
-}
+	@FindBy(id = "username")
+	private WebElement userField;
 
-public void verifyLogIn() {
-	driver.findElement(logIn_btn).click();
-	 
+	@FindBy(id = "password")
+	private WebElement passwordField;
+
+	@FindBy(id = "login")
+	private WebElement secondaryLoginButton;
+
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	public void clickOnFirstLoginButton() {
+		firstLoginButton.click();
+	}
+
+	public void enterUsername(String emailText) {
+		userField.sendKeys(emailText);
+	}
+
+	public void enterPassword(String passwordText) {
+		passwordField.sendKeys(passwordText);
+	}
+
+	public AccountPage clickOnSecondaryLoginButton() {
+
+		secondaryLoginButton.click();
+		return new AccountPage(driver);
+		
+	}
 	
+	public AccountPage login(String emailText,String passwordText) {
+		
+		userField.sendKeys(emailText);
+		passwordField.sendKeys(passwordText);
+		clickOnSecondaryLoginButton();
+		return new AccountPage(driver);
+		
+	}
 	
-}
-}
+
+	}
+

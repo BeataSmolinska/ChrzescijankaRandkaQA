@@ -25,7 +25,7 @@ public class Base {
 		File propFile = new File(System.getProperty("user.dir")
 		+ "\\src\\main\\java\\com\\chrzescijanska\\randka\\qa\\config\\config.properties");
 		dataProp= new Properties();
-		File dataPropFile = new File (System.getProperty("user.dir") + "\\src\\test\\java\\com\\chrzescijanska\\ranska\\qa\\testData\\testData.properties");
+		File dataPropFile = new File (System.getProperty("user.dir") + "\\src\\main\\java\\com\\chrzescijanska\\ranska\\qa\\testData\\testData.properties");
 		try {
 		FileInputStream dataFis = new FileInputStream(dataPropFile);
 		dataProp.load(dataFis);}
