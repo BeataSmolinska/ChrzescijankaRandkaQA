@@ -6,8 +6,8 @@
       <class name="com.chrzescijanksaRandka.qa.testScenarios.LoginTest">
         <methods>
           <include name="setup"/>
-          <include name="verifyLoggingIntoTheApplicationUsingValidCredentials"/>
           <include name="tearDown"/>
+          <include name="verifyLoggingIntoTheApplicationUsingInvalidCredentials"/>
         </methods>
       </class> <!-- com.chrzescijanksaRandka.qa.testScenarios.LoginTest -->
     </classes>
