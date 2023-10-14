@@ -2,6 +2,7 @@ package com.chrzescijanska.randka.pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -77,5 +78,16 @@ public class LoginPage {
 		return warningText;
 
 	}
+	public AccountPage loginUsingTabAndEnter(String emailText, String passwordText) {
+        firstLoginButton.click();
+        userField.sendKeys(Keys.TAB);
+		userField.sendKeys(emailText);
+		passwordField.sendKeys(passwordText);
+		passwordField.sendKeys(Keys.TAB);
+		secondaryLoginButton.sendKeys(Keys.ENTER);
 
+		return new AccountPage(driver);
+
+
+}
 }

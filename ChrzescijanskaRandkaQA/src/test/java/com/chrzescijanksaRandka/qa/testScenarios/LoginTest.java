@@ -35,7 +35,7 @@ public class LoginTest extends Base {
 
 	@AfterMethod
 	public void tearDown() {
-		// driver.quit();
+		 driver.quit();
 
 	}
 
@@ -50,16 +50,23 @@ public class LoginTest extends Base {
 			@Test(priority=2)
 			public void verifyLoggingIntoTheApplicationUsingInvalidCredentials() {
 				loginPage.login(Utils.generateEmailWithTimeStamp(),prop.getProperty("invalidPassword"));
-				  loginPage. waitForTextInEmailPasswordNotMatchingWarningElement();
-			
-
-			loginPage.retrieveEmailPasswordNotMatchingWarningMessageText();
+				loginPage. waitForTextInEmailPasswordNotMatchingWarningElement();
+			    loginPage.retrieveEmailPasswordNotMatchingWarningMessageText();
 				
 				Assert.assertTrue(loginPage.retrieveEmailPasswordNotMatchingWarningMessageText().contains(dataProp.getProperty("emailPasswordNoMatchWarning")),"Expected Warning message is not displayed");
-				//Assert.assertEquals(loginPage.retrieveEmailPasswordNotMatchingWarningMessageText(), (dataProp.getProperty("emailPasswordNoMatchWarning")), "Login failed!");
-		
+				
 			}
 			
+			@Test(priority=3)
+			public void verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter() {
+				
+				 loginPage.loginUsingTabAndEnter(dataProp.getProperty("validEmail"),dataProp.getProperty("validPassword"));
+				 AccountPage accountPage = new AccountPage(driver);
+				Assert.assertTrue(accountPage.getDisplayStatusOfprofileButton(),"profileButton is not displated");
+			}
+			
+			
 		}
+
 
 
