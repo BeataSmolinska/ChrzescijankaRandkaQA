@@ -1,4 +1,4 @@
-package com.chrzescijanska.randka.pages;
+package pl.chrzescijanska.randka.pages;
 
 import java.time.Duration;
 
@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPage {
 	WebDriver driver;
 	WebDriverWait wait;
+	
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -20,16 +21,16 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(id ="login_panel")
+	@FindBy(id = "login_panel")
 	private WebElement firstLoginButton;
 
-	@FindBy(id ="username")
+	@FindBy(id = "username")
 	private WebElement userField;
 
-	@FindBy(id ="password")
+	@FindBy(id = "password")
 	private WebElement passwordField;
 
-	@FindBy(id ="login")
+	@FindBy(id = "login")
 	private WebElement secondaryLoginButton;
 
 	@FindBy(id = "kleo-login-result")
@@ -37,7 +38,8 @@ public class LoginPage {
 
 	public void waitForTextInEmailPasswordNotMatchingWarningElement() {
 
-		wait.until(ExpectedConditions.textToBePresentInElement(emailPasswordNotMatchingWarning, "Nieznany adres email."));
+		wait.until(
+				ExpectedConditions.textToBePresentInElement(emailPasswordNotMatchingWarning, "Nieznany adres email."));
 
 	}
 
@@ -78,9 +80,10 @@ public class LoginPage {
 		return warningText;
 
 	}
+
 	public AccountPage loginUsingTabAndEnter(String emailText, String passwordText) {
-        firstLoginButton.click();
-        userField.sendKeys(Keys.TAB);
+		firstLoginButton.click();
+		userField.sendKeys(Keys.TAB);
 		userField.sendKeys(emailText);
 		passwordField.sendKeys(passwordText);
 		passwordField.sendKeys(Keys.TAB);
@@ -88,6 +91,11 @@ public class LoginPage {
 
 		return new AccountPage(driver);
 
+	}
 
-}
+	public boolean getDisplayStatusOfsecondaryLoginButton() {
+		boolean displayStatus = secondaryLoginButton.isDisplayed();
+		return displayStatus;
+
+	}
 }

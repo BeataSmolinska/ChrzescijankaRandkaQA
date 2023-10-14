@@ -26,10 +26,10 @@ public class Base {
 
 		prop = new Properties();
 		File propFile = new File(System.getProperty("user.dir")
-				+ "\\src\\main\\java\\com\\chrzescijanska\\randka\\qa\\config\\config.properties");
+				+ "\\src\\main\\java\\pl\\chrzescijanska\\randka\\qa\\config\\config.properties");
 		dataProp = new Properties();
 		File dataPropFile = new File(System.getProperty("user.dir")
-				+ "\\src\\main\\java\\com\\chrzescijanska\\ranska\\qa\\testData\\testData.properties");
+				+ "\\src\\main\\java\\pl\\chrzescijanska\\randka\\qa\\testData\\testData.properties");
 		try {
 			FileInputStream dataFis = new FileInputStream(dataPropFile);
 			dataProp.load(dataFis);
@@ -58,8 +58,8 @@ public class Base {
 			driver = new SafariDriver();
 		}
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(com.chrzescijanskja.randka.ulils.Utils.IMPLICIT_WAIT_TIME));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(com.chrzescijanskja.randka.ulils.Utils.PAGE_LOAD_TIME));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(pl.chrzescijanskja.randka.ulils.Utils.IMPLICIT_WAIT_TIME));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pl.chrzescijanskja.randka.ulils.Utils.PAGE_LOAD_TIME));
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 		return driver;

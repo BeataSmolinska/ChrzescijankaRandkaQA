@@ -1,4 +1,4 @@
-package com.chrzescijanska.randka.pages;
+package pl.chrzescijanska.randka.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
