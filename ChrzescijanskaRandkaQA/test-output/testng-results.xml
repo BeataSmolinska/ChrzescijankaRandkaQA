@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T20:52:38 CEST" name="Chrzescijanka Randka QA Automation Suite" finished-at="2023-10-19T20:54:09 CEST" duration-ms="91318">
+  <suite started-at="2023-10-27T18:22:47 CEST" name="Chrzescijanka Randka QA Automation Suite" finished-at="2023-10-27T18:23:16 CEST" duration-ms="28858">
     <groups>
     </groups>
-    <test started-at="2023-10-19T20:52:38 CEST" name="ChrzescijanskaRandka TestCases" finished-at="2023-10-19T20:54:09 CEST" duration-ms="91318">
+    <test started-at="2023-10-27T18:22:47 CEST" name="ChrzescijanskaRandka TestCases" finished-at="2023-10-27T18:23:16 CEST" duration-ms="28858">
       <class name="com.chrzescijanksaRandka.qa.testScenarios.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:52:38 CEST" name="setup" finished-at="2023-10-19T20:52:58 CEST" duration-ms="20284" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:22:47 CEST" name="setup" finished-at="2023-10-27T18:22:55 CEST" duration-ms="7232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoggingIntoTheApplicationUsingValidCredentials()[pri:1, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:52:58 CEST" name="verifyLoggingIntoTheApplicationUsingValidCredentials" finished-at="2023-10-19T20:52:59 CEST" duration-ms="767" status="PASS">
+        <test-method signature="verifyLoggingIntoTheApplicationUsingValidCredentials()[pri:1, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:22:55 CEST" name="verifyLoggingIntoTheApplicationUsingValidCredentials" finished-at="2023-10-27T18:22:55 CEST" duration-ms="787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoggingIntoTheApplicationUsingValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:52:59 CEST" name="tearDown" finished-at="2023-10-19T20:53:00 CEST" duration-ms="664" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:22:55 CEST" name="tearDown" finished-at="2023-10-27T18:22:56 CEST" duration-ms="640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:53:00 CEST" name="setup" finished-at="2023-10-19T20:53:25 CEST" duration-ms="25341" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:22:56 CEST" name="setup" finished-at="2023-10-27T18:23:01 CEST" duration-ms="4934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoggingIntoTheApplicationUsingInvalidCredentials()[pri:2, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:53:25 CEST" name="verifyLoggingIntoTheApplicationUsingInvalidCredentials" finished-at="2023-10-19T20:53:27 CEST" duration-ms="2383" status="PASS">
+        <test-method signature="verifyLoggingIntoTheApplicationUsingInvalidCredentials()[pri:2, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:23:01 CEST" name="verifyLoggingIntoTheApplicationUsingInvalidCredentials" finished-at="2023-10-27T18:23:02 CEST" duration-ms="1268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoggingIntoTheApplicationUsingInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:53:27 CEST" name="tearDown" finished-at="2023-10-19T20:53:28 CEST" duration-ms="602" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:23:02 CEST" name="tearDown" finished-at="2023-10-27T18:23:03 CEST" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:53:28 CEST" name="setup" finished-at="2023-10-19T20:53:52 CEST" duration-ms="24372" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:23:03 CEST" name="setup" finished-at="2023-10-27T18:23:09 CEST" duration-ms="6246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter()[pri:3, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:53:52 CEST" name="verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter" finished-at="2023-10-19T20:53:53 CEST" duration-ms="737" status="PASS">
+        <test-method signature="verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter()[pri:3, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:23:09 CEST" name="verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter" finished-at="2023-10-27T18:23:10 CEST" duration-ms="806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:53:53 CEST" name="tearDown" finished-at="2023-10-19T20:53:54 CEST" duration-ms="632" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:23:10 CEST" name="tearDown" finished-at="2023-10-27T18:23:11 CEST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:53:54 CEST" name="setup" finished-at="2023-10-19T20:54:08 CEST" duration-ms="14342" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:23:11 CEST" name="setup" finished-at="2023-10-27T18:23:15 CEST" duration-ms="4482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyLoggingIntoTheApplicationWithoutProvidingAnyCredentials()[pri:4, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:54:08 CEST" name="VerifyLoggingIntoTheApplicationWithoutProvidingAnyCredentials" finished-at="2023-10-19T20:54:08 CEST" duration-ms="478" status="PASS">
+        <test-method signature="VerifyLoggingIntoTheApplicationWithoutProvidingAnyCredentials()[pri:4, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:23:15 CEST" name="VerifyLoggingIntoTheApplicationWithoutProvidingAnyCredentials" finished-at="2023-10-27T18:23:16 CEST" duration-ms="474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoggingIntoTheApplicationWithoutProvidingAnyCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@188715b5]" started-at="2023-10-19T20:54:08 CEST" name="tearDown" finished-at="2023-10-19T20:54:09 CEST" duration-ms="654" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chrzescijanksaRandka.qa.testScenarios.LoginTest@56620197]" started-at="2023-10-27T18:23:16 CEST" name="tearDown" finished-at="2023-10-27T18:23:16 CEST" duration-ms="654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

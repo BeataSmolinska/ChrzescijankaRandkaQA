@@ -20,7 +20,7 @@ public class LoginTest extends Base {
 		super();
 	}
 
-	WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeMethod
 	public void setup() {
@@ -41,14 +41,14 @@ public class LoginTest extends Base {
 	public void verifyLoggingIntoTheApplicationUsingValidCredentials() {
 
 		loginPage.clickOnFirstLoginButton();
-		loginPage.login(dataProp.getProperty("validEmail"), dataProp.getProperty("validPassword"));
+		loginPage.login(prop.getProperty("validEmail"), prop.getProperty("validPassword"));
 		AccountPage accountPage = new AccountPage(driver);
 		Assert.assertTrue(accountPage.getDisplayStatusOfprofileButton(), "profileButton is not displated");
 	}
 
 	@Test(priority = 2)
 	public void verifyLoggingIntoTheApplicationUsingInvalidCredentials() {
-		loginPage.login(Utils.generateEmailWithTimeStamp(), prop.getProperty("invalidPassword"));
+		loginPage.login(Utils.generateEmailWithTimeStamp(), dataProp.getProperty("invalidPassword"));
 		loginPage.waitForTextInEmailPasswordNotMatchingWarningElement();
 		loginPage.retrieveEmailPasswordNotMatchingWarningMessageText();
 
@@ -62,7 +62,7 @@ public class LoginTest extends Base {
 	@Test(priority = 3)
 	public void verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter() {
 
-		loginPage.loginUsingTabAndEnter(dataProp.getProperty("validEmail"), dataProp.getProperty("validPassword"));
+		loginPage.loginUsingTabAndEnter(prop.getProperty("validEmail"), prop.getProperty("validPassword"));
 		AccountPage accountPage = new AccountPage(driver);
 		Assert.assertTrue(accountPage.getDisplayStatusOfprofileButton(), "profileButton is not display");
 	}
