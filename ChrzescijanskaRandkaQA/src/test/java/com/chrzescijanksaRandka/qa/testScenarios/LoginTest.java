@@ -33,7 +33,7 @@ public class LoginTest extends Base {
 
 	@AfterMethod
 	public void tearDown() {
-	 driver.quit();
+	 //driver.quit();
 
 	}
 

@@ -8,7 +8,9 @@
           <include name="setup"/>
           <include name="verifyLoggingIntoTheApplicationUsingValidCredentials"/>
           <include name="tearDown"/>
+          <include name="VerifyLoggingIntoTheApplicationWithoutProvidingAnyCredentials"/>
           <include name="verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter"/>
+          <include name="verifyLoggingIntoTheApplicationUsingInvalidCredentials"/>
         </methods>
       </class> <!-- com.chrzescijanksaRandka.qa.testScenarios.LoginTest -->
     </classes>

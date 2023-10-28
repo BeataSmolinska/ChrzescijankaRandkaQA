@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Chrzescijanka_Randka_QA_Automation_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Chrzescijanka Randka QA Automation Suite</span>
+              <span class="suite-name border-failed">Chrzescijanka Randka QA Automation Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Chrzescijanka_Randka_QA_Automation_Suite" class="hide-methods failed suite-Chrzescijanka_Randka_QA_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Chrzescijanka_Randka_QA_Automation_Suite -->
+                      <a href="#" panel-name="suite-Chrzescijanka_Randka_QA_Automation_Suite" class="show-methods failed suite-Chrzescijanka_Randka_QA_Automation_Suite"> (show)</a> <!-- show-methods failed suite-Chrzescijanka_Randka_QA_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Chrzescijanka_Randka_QA_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Chrzescijanka_Randka_QA_Automation_Suite" title="com.chrzescijanksaRandka.qa.testScenarios.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoTheApplicationUsingValidCredentials">verifyLoggingIntoTheApplicationUsingValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Chrzescijanka_Randka_QA_Automation_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,11 +131,6 @@
                         <a href="#" panel-name="suite-Chrzescijanka_Randka_QA_Automation_Suite" title="com.chrzescijanksaRandka.qa.testScenarios.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter">verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Chrzescijanka_Randka_QA_Automation_Suite" title="com.chrzescijanksaRandka.qa.testScenarios.LoginTest" class="method navigator-link" hash-for-method="verifyLoggingIntoTheApplicationUsingValidCredentials">verifyLoggingIntoTheApplicationUsingValidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Chrzescijanka_Randka_QA_Automation_Suite -->
                   </li>
                 </ul>
@@ -134,6 +143,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Chrzescijanka_Randka_QA_Automation_Suite" class="panel Chrzescijanka_Randka_QA_Automation_Suite">
+          <div class="suite-Chrzescijanka_Randka_QA_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.chrzescijanksaRandka.qa.testScenarios.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingIntoTheApplicationUsingValidCredentials">
+                  </a> <!-- verifyLoggingIntoTheApplicationUsingValidCredentials -->
+                  <span class="method-name">verifyLoggingIntoTheApplicationUsingValidCredentials</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; id=&quot;login&quot; name=&quot;wp-submit&quot; class=&quot;radius secondary button&quot;&gt;...&lt;/button&gt; is not clickable at point (650, 329). Other element would receive the click: &lt;div class=&quot;twelve columns&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19ca0ce7d14900d7b39f739f395d16e6, clickElement {id=23954929-7c58-4d5f-aee4-3888efcf0589}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51387}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51387/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (19ca0ce7d14900d7b39f739f395d16e6)] -&gt; id: login]
+Session ID: 19ca0ce7d14900d7b39f739f395d16e6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at pl.chrzescijanska.randka.pages.LoginPage.clickOnSecondaryLoginButton(LoginPage.java:61)
+	at pl.chrzescijanska.randka.pages.LoginPage.login(LoginPage.java:70)
+	at com.chrzescijanksaRandka.qa.testScenarios.LoginTest.verifyLoggingIntoTheApplicationUsingValidCredentials(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Chrzescijanka_Randka_QA_Automation_Suite-class-failed -->
           <div class="suite-Chrzescijanka_Randka_QA_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -159,13 +209,6 @@
                   <a name="verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter">
                   </a> <!-- verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter -->
                   <span class="method-name">verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoggingIntoTheApplicationUsingValidCredentials">
-                  </a> <!-- verifyLoggingIntoTheApplicationUsingValidCredentials -->
-                  <span class="method-name">verifyLoggingIntoTheApplicationUsingValidCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,26 +270,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoggingIntoTheApplicationUsingInvalidCredentials')
+data.setCell(0, 1, 'verifyLoggingIntoTheApplicationUsingValidCredentials')
 data.setCell(0, 2, 'com.chrzescijanksaRandka.qa.testScenarios.LoginTest')
-data.setCell(0, 3, 1268);
+data.setCell(0, 3, 1698);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter')
+data.setCell(1, 1, 'verifyLoggingIntoTheApplicationUsingInvalidCredentials')
 data.setCell(1, 2, 'com.chrzescijanksaRandka.qa.testScenarios.LoginTest')
-data.setCell(1, 3, 806);
+data.setCell(1, 3, 1378);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLoggingIntoTheApplicationUsingValidCredentials')
+data.setCell(2, 1, 'verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter')
 data.setCell(2, 2, 'com.chrzescijanksaRandka.qa.testScenarios.LoginTest')
-data.setCell(2, 3, 787);
+data.setCell(2, 3, 813);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'VerifyLoggingIntoTheApplicationWithoutProvidingAnyCredentials')
 data.setCell(3, 2, 'com.chrzescijanksaRandka.qa.testScenarios.LoginTest')
-data.setCell(3, 3, 474);
+data.setCell(3, 3, 505);
 window.suiteTableData['Chrzescijanka_Randka_QA_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Chrzescijanka_Randka_QA_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Chrzescijanka_Randka_QA_Automation_Suite">
               </div> <!-- times-div-Chrzescijanka_Randka_QA_Automation_Suite -->
             </div> <!-- times-div -->
@@ -278,48 +321,50 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyLoggingIntoTheApplicationUsingValidCredentials</span>
-                <span class="method-start">7234 ms</span>
+                <span class="method-start">10477 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8037 ms</span>
+                <span class="method-start">12490 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8683 ms</span>
+                <span class="method-start">12494 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoggingIntoTheApplicationUsingInvalidCredentials</span>
-                <span class="method-start">13617 ms</span>
+                <span class="method-start">18819 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14887 ms</span>
+                <span class="method-start">20206 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">15505 ms</span>
+                <span class="method-start">20207 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoggingIntoTheApplicationUsingKeyboardKeysTabAndEnter</span>
-                <span class="method-start">21751 ms</span>
+                <span class="method-start">28239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22559 ms</span>
+                <span class="method-start">29053 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">23207 ms</span>
+                <span class="method-start">29054 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyLoggingIntoTheApplicationWithoutProvidingAnyCredentials</span>
-                <span class="method-start">27689 ms</span>
+                <span class="method-start">34410 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28164 ms</span>
+                <span class="method-start">34926 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
