@@ -2,7 +2,8 @@
 
 This project contains an automated test responsible for testing the login process on a dating portal using the Java programming language. It is an ongoing project that will be continuously developed and improved.
 
-## Here you can watch how a sample test is executed using Jenkins, and an automated report is generated.
+## Test video
+Here you can watch how a sample test is executed using Jenkins, and an automated report is generated.
 [![Alt Text](thumbnail_url)](https://drive.google.com/file/d/1iqjgD2_YqJ9pjq-EsHEjjhQZMphff-ix/view?usp=sharing)
 
 ## Test Cases
