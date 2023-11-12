@@ -4,7 +4,7 @@ This project contains an automated test responsible for testing the login proces
 
 ## Test video
 Here you can watch how a sample test is executed using Jenkins, and an automated report is generated.
-[![Alt Text](thumbnail_url)](https://drive.google.com/file/d/1iqjgD2_YqJ9pjq-EsHEjjhQZMphff-ix/view?usp=sharing)
+[![Click here to watch](thumbnail_url)](https://drive.google.com/file/d/1iqjgD2_YqJ9pjq-EsHEjjhQZMphff-ix/view?usp=sharing)
 
 ## Test Cases
 
