@@ -1,4 +1,4 @@
-package com.chrzescijanskaRandka.qa.base;
+package com.chrzescijanskaRandka.base;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -26,10 +26,10 @@ public class Base {
 
 		prop = new Properties();
 		File propFile = new File(System.getProperty("user.dir")
-				+ "\\src\\main\\java\\pl\\chrzescijanska\\randka\\qa\\config\\config.properties");
+				+ "\\src\\main\\java\\pl\\chrzescijanskaRandka\\config\\config.properties");
 		dataProp = new Properties();
 		File dataPropFile = new File(System.getProperty("user.dir")
-				+ "\\src\\main\\java\\pl\\chrzescijanska\\randka\\qa\\testData\\testData.properties");
+				+ "\\src\\main\\java\\pl\\chrzescijanskaRandka\\testData\\testData.properties");
 		try {
 			FileInputStream dataFis = new FileInputStream(dataPropFile);
 			dataProp.load(dataFis);
@@ -59,9 +59,9 @@ public class Base {
 		}
 
 		driver.manage().timeouts()
-				.implicitlyWait(Duration.ofSeconds(pl.chrzescijanska.randka.utils.Utils.IMPLICIT_WAIT_TIME));
+				.implicitlyWait(Duration.ofSeconds(pl.chrzescijanskaRandka.utils.Utils.IMPLICIT_WAIT_TIME));
 		driver.manage().timeouts()
-				.pageLoadTimeout(Duration.ofSeconds(pl.chrzescijanska.randka.utils.Utils.PAGE_LOAD_TIME));
+				.pageLoadTimeout(Duration.ofSeconds(pl.chrzescijanskaRandka.utils.Utils.PAGE_LOAD_TIME));
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 		return driver;

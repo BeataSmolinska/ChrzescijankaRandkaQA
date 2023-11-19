@@ -1,4 +1,4 @@
-package pl.chrzescijanska.randka.utils;
+package pl.chrzescijanskaRandka.utils;
 
 import java.io.File;
 import java.io.IOException;
