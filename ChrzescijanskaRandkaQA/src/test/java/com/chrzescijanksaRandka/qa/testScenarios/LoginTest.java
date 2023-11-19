@@ -1,5 +1,8 @@
 package com.chrzescijanksaRandka.qa.testScenarios;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +18,8 @@ import pl.chrzescijanskja.randka.ulils.Utils;
 
 public class LoginTest extends Base {
 	LoginPage loginPage;
-
+    AccountPage accountPage;
+    HomePage homePage;
 	LoginTest() {
 		super();
 	}
@@ -33,7 +37,7 @@ public class LoginTest extends Base {
 
 	@AfterMethod
 	public void tearDown() {
-	 //driver.quit();
+	 driver.quit();
 
 	}
 
@@ -74,5 +78,15 @@ public class LoginTest extends Base {
 		Assert.assertTrue(loginPage.getDisplayStatusOfsecondaryLoginButton(), "secondaryLoginButton is not display");
 
 	}
-
+	
+	@Test (priority = 5)
+	public void VerifyLoggingOutOfTheApplication() {
+		
+		loginPage.clickOnFirstLoginButton();
+		loginPage.login(prop.getProperty("validEmail"), prop.getProperty("validPassword"));
+		AccountPage accountPage = new AccountPage(driver);
+		accountPage.clickOnlogOutButton();
+		 Assert.assertTrue(homePage.getDisplayStatusOfzalogujButton(),"zalogujButton is not display ");
+		
+}
 }

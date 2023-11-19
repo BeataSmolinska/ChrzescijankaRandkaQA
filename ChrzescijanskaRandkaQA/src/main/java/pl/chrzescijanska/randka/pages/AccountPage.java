@@ -10,6 +10,9 @@ public class AccountPage {
 
 	@FindBy(css = ".icon-user.hide-for-medium-down")
 	WebElement profileButton;
+	
+	@FindBy(css = ".tiny.button.radius.btn-logout")
+	WebElement logOutButton;
 
 	public AccountPage(WebDriver driver) {
 		this.driver = driver;
@@ -19,5 +22,9 @@ public class AccountPage {
 	public boolean getDisplayStatusOfprofileButton() {
 		boolean displayStatus = profileButton.isDisplayed();
 		return displayStatus;
+	}
+	public HomePage clickOnlogOutButton() {
+		logOutButton.click();
+		return new HomePage(driver);
 	}
 }
