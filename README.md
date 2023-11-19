@@ -8,4 +8,4 @@ Here you can watch how a sample test is executed using Jenkins, and an automated
 
 ## Test Cases
 
-You can find the test cases for this project [here](https://drive.google.com/file/d/1KoGPgRRhQpJeGR7DF4DifYFB0UY8nqpx/view?usp=sharing). Feel free to access it.
+You can find the test cases for this project [here](https://drive.google.com/drive/u/0/folders/1e4OJhXK4SUNeyUJIwPBIXQFWeK5lQRj8). Feel free to access it.
