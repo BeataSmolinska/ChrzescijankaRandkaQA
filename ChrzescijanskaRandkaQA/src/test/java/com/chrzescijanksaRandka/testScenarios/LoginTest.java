@@ -1,4 +1,4 @@
-package com.chrzescijanksaRandka.qa.testScenarios;
+package com.chrzescijanksaRandka.testScenarios;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -6,12 +6,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.chrzescijanskaRandka.qa.base.Base;
+import com.chrzescijanskaRandka.base.Base;
 
-import pl.chrzescijanska.randka.pages.AccountPage;
-import pl.chrzescijanska.randka.pages.HomePage;
-import pl.chrzescijanska.randka.pages.LoginPage;
-import pl.chrzescijanska.randka.utils.Utils;
+import pl.chrzescijanskaRandka.pages.AccountPage;
+import pl.chrzescijanskaRandka.pages.HomePage;
+import pl.chrzescijanskaRandka.pages.LoginPage;
+import pl.chrzescijanskaRandka.utils.Utils;
 
 public class LoginTest extends Base {
 	LoginPage loginPage;

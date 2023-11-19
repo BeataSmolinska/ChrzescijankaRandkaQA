@@ -1,4 +1,4 @@
-package pl.chrzescijanska.randka.qa.listeners;
+package pl.chrzescijanskaRandka.listeners;
 
 import java.awt.Desktop;
 import java.io.File;
@@ -16,8 +16,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import pl.chrzescijanska.randka.utils.ExtentReporter;
-import pl.chrzescijanska.randka.utils.Utils;
+import pl.chrzescijanskaRandka.utils.ExtentReporter;
+import pl.chrzescijanskaRandka.utils.Utils;
 
 public class MyListeners implements ITestListener {
 

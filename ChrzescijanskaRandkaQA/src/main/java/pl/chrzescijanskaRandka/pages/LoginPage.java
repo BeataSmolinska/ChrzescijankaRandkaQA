@@ -1,4 +1,4 @@
-package pl.chrzescijanska.randka.pages;
+package pl.chrzescijanskaRandka.pages;
 
 import java.time.Duration;
 
