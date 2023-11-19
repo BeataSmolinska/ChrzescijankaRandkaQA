@@ -1,4 +1,4 @@
-package com.chrzescijanksaRandka.testScenarios;
+package chrzescijanksaRandka.testScenarios;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -6,8 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.chrzescijanskaRandka.base.Base;
-
+import chrzescijanskaRandka.base.Base;
 import pl.chrzescijanskaRandka.pages.AccountPage;
 import pl.chrzescijanskaRandka.pages.HomePage;
 import pl.chrzescijanskaRandka.pages.LoginPage;

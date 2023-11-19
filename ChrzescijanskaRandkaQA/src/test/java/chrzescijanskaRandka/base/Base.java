@@ -1,4 +1,4 @@
-package com.chrzescijanskaRandka.base;
+package chrzescijanskaRandka.base;
 
 import java.io.File;
 import java.io.FileInputStream;
