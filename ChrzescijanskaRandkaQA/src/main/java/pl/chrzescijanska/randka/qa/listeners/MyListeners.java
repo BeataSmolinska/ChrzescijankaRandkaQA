@@ -71,6 +71,7 @@ public class MyListeners implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
+		
 		extentReport.flush();
 		
 		String PathOfExtentreport = System.getProperty("user.dir") + "\\test-output\\ExtentReports\\extentReport.html";

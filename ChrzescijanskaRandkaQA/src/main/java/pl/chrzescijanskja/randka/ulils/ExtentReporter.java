@@ -13,7 +13,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ExtentReporter {
 	public static ExtentReports generateExtentReport() {
 		ExtentReports extentReport = new ExtentReports();
-		File extentReportFile = new File(System.getProperty("user.dir") + "\\test-output\\ExtentReports\\extentReporter.html");
+		File extentReportFile = new File(System.getProperty("user.dir") + "\\test-output\\ExtentReports\\extentReport.html");
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentReportFile);
 
 		sparkReporter.config().setTheme(Theme.DARK);

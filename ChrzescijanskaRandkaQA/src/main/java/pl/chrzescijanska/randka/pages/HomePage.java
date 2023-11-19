@@ -26,5 +26,9 @@ public class HomePage {
 		return new LoginPage(driver);
 
 	}
+	public boolean getDisplayStatusOfzalogujButton() {
+		boolean displayStatus = zalogujButton.isDisplayed();
+		return displayStatus;
 
+}
 }
