@@ -12,7 +12,7 @@ public class AccountPage {
 	WebElement profileButton;
 	
 	@FindBy(css = ".tiny.button.radius.btn-logout")
-	WebElement logOutButton;
+	WebElement logoutButton;
 
 	public AccountPage(WebDriver driver) {
 		this.driver = driver;
@@ -24,7 +24,7 @@ public class AccountPage {
 		return displayStatus;
 	}
 	public HomePage clickOnlogOutButton() {
-		logOutButton.click();
+		logoutButton.click();
 		return new HomePage(driver);
 	}
 }

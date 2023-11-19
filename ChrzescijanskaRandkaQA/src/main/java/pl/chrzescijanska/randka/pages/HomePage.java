@@ -9,7 +9,7 @@ public class HomePage {
 	WebDriver driver;
 
 	@FindBy(className = "header-login-button")
-	private WebElement zalogujButton;
+	private WebElement loginButton;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -17,18 +17,19 @@ public class HomePage {
 	}
 
 	public void clickOnZalogujButton() {
-		zalogujButton.click();
+		loginButton.click();
 	}
 
 	public LoginPage naviageToLoginPage() {
 
-		zalogujButton.click();
+		loginButton.click();
 		return new LoginPage(driver);
 
 	}
+
 	public boolean getDisplayStatusOfzalogujButton() {
-		boolean displayStatus = zalogujButton.isDisplayed();
+		boolean displayStatus = loginButton.isDisplayed();
 		return displayStatus;
 
-}
+	}
 }
