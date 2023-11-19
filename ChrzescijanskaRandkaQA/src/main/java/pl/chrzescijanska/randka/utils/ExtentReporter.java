@@ -1,4 +1,4 @@
-package pl.chrzescijanskja.randka.ulils;
+package pl.chrzescijanska.randka.utils;
 
 import java.io.File;
 import java.io.FileInputStream;

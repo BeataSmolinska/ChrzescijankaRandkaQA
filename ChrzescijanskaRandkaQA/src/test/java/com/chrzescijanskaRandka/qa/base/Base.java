@@ -58,8 +58,10 @@ public class Base {
 			driver = new SafariDriver();
 		}
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(pl.chrzescijanskja.randka.ulils.Utils.IMPLICIT_WAIT_TIME));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pl.chrzescijanskja.randka.ulils.Utils.PAGE_LOAD_TIME));
+		driver.manage().timeouts()
+				.implicitlyWait(Duration.ofSeconds(pl.chrzescijanska.randka.utils.Utils.IMPLICIT_WAIT_TIME));
+		driver.manage().timeouts()
+				.pageLoadTimeout(Duration.ofSeconds(pl.chrzescijanska.randka.utils.Utils.PAGE_LOAD_TIME));
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 		return driver;

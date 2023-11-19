@@ -16,8 +16,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import pl.chrzescijanskja.randka.ulils.ExtentReporter;
-import pl.chrzescijanskja.randka.ulils.Utils;
+import pl.chrzescijanska.randka.utils.ExtentReporter;
+import pl.chrzescijanska.randka.utils.Utils;
 
 public class MyListeners implements ITestListener {
 
